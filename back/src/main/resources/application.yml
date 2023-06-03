@@ -1,0 +1,20 @@
+server:
+  port: 9999
+spring:
+  datasource:
+#    driverClassName: net.sourceforge.jtds.jdbc.Driver
+#    url: jdbc:jtds:sqlserver://10.10.1.83:1433;Database=WEB
+#    name: m370
+#    url: jdbc:mysql:///xdb
+    url: jdbc:mysql://10.10.1.83:3306/web?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: 2oiigxii
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    port: 6379
+    host: 10.10.1.83
+
+logging:
+  level:
+    com.ucc: debug
